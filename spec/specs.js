@@ -18,4 +18,8 @@ describe('triangle', function() {
   it("will bring up an error message if user enters a letter", function() {
     expect(triangle(2, 2, 'l')).to.equal('numbers only');
   });
+
+  it("will bring up an error message if user enters a negative number", function() {
+    expect(triangle(2, 2, -1)).to.equal('no negative numbers');
+  });
 });
